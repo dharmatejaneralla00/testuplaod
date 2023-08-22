@@ -18,4 +18,4 @@ def upload(r):
     # c = ean.save(filename="1234ABC")
     c = ean.save(os.path.join(BASE_DIR,'media/files/12340000'))
     # models.Model(name='1234',files=c).save()
-    return HttpResponse("Hi")
+    return HttpResponse("<img src='media/files/12340000.png'/>")

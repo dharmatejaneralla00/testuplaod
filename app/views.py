@@ -15,5 +15,5 @@ def upload(r):
     ean = barcode.get(name="code128",code='1234ABC',writer=ImageWriter())
     # code = ean('1234', writer=ImageWriter())
     # ean.save(os.path.join(BASE_DIR, 'templates/docx/generateddrs/barcode/1234'))
-    models.Model(name='1234',files=ean.save("1234ABC"))
+    models.Model(name='1234',files=ean.save(os.path.join(BASE_DIR,"media/files/1234ABC"))).save()
     return HttpResponse("Hi")

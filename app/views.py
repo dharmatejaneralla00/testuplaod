@@ -16,6 +16,6 @@ def upload(r):
     # code = ean('1234', writer=ImageWriter())
     # ean.save(os.path.join(BASE_DIR, 'templates/docx/generateddrs/barcode/1234'))
     # c = ean.save(filename="1234ABC")
-    c = ean.save(os.path.join(BASE_DIR,'media/files/1234'))
+    c = ean.save(os.path.join(BASE_DIR,'media/files/12340000'))
     # models.Model(name='1234',files=c).save()
     return HttpResponse("Hi")

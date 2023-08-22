@@ -1,2 +1,4 @@
 django
 gunicorn==19.7.1
+python-barcode
+python-barcode[images]
